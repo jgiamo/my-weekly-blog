@@ -120,14 +120,15 @@ export default async function WeeklyDetailsPage({ params }: Props) {
             <Link href="/" className="link-underline">
               去首页
             </Link>
-            <Link
-              href="https://twitter.com/weijunext/"
+            {/* 暂时移除Twitter链接，可以后续添加其他链接 */}
+            {/* <Link
+              href="https://twitter.com/yourusername/"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="link-underline"
             >
               Twitter/X
-            </Link>
+            </Link> */}
           </div>
         </div>
         <Comments />

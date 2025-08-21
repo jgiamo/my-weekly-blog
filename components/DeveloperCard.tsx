@@ -1,6 +1,5 @@
 "use client";
 
-import FollowButton from "@/components/FollowButton";
 import { Avatar, Card, CardBody, CardHeader, Chip } from "@nextui-org/react";
 
 export default function DeveloperCard() {
@@ -12,32 +11,33 @@ export default function DeveloperCard() {
         </CardHeader>
         <CardBody>
           <div className="pb-4 pt-6">
-            <p className="text-large font-medium">weijunext/程普</p>
+            <p className="text-large font-medium">小杰</p>
             <p className="max-w-[90%] text-small text-default-400">
-              @weijunext
+              @xiaojie
             </p>
             <div className="flex gap-2 pb-1 pt-2">
-              <Chip variant="flat">👨‍💻前端</Chip>
+              <Chip variant="flat">👨‍💻后端</Chip>
               <Chip variant="flat">🛠️全栈</Chip>
-              <Chip variant="flat">✨AI</Chip>
-              <Chip variant="flat">⛵️出海</Chip>
+              <Chip variant="flat">✨技术分享</Chip>
+              <Chip variant="flat">📚学习笔记</Chip>
             </div>
             <p className="py-2 text-small text-foreground">
-              Next.js开源手艺人｜掘金签约作者｜出海鼓励师
+              后端开发工程师｜技术博主｜学习分享者
             </p>
             <div className="w-full text-center mt-4 flex justify-evenly">
-              <FollowButton
+              {/* 暂时禁用社交链接按钮 */}
+              {/* <FollowButton
                 name="Twitter/X"
-                href="https://twitter.com/weijunext/"
+                href="https://twitter.com/yourusername/"
               ></FollowButton>
               <FollowButton
                 name="Github"
-                href="https://github.com/weijunext/"
+                href="https://github.com/yourusername/"
               ></FollowButton>
               <FollowButton
                 name="掘金"
-                href="https://juejin.cn/user/26044008768029"
-              ></FollowButton>
+                href="https://juejin.cn/user/youruserid"
+              ></FollowButton> */}
             </div>
           </div>
         </CardBody>

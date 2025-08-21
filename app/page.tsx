@@ -15,6 +15,12 @@ export default async function Home() {
     <div className="flex flex-row w-full pt-12">
       <div className="hidden md:block md:w-1/5 pl-6"></div>
       <div className="w-full md:w-3/5 px-6">
+        {/* 添加欢迎标题 */}
+        <div className="mb-8 text-center">
+          <h1 className="text-3xl font-bold text-gray-100 mb-4">欢迎来到小杰说</h1>
+          <p className="text-gray-400 text-lg">分享技术心得，记录学习笔记</p>
+        </div>
+
         <WeeklyList posts={posts} />
         <DeveloperCard />
       </div>

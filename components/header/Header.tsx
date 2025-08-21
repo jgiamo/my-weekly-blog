@@ -1,6 +1,5 @@
 import DocSearch from "@/components/DocSearch";
 import { docSearchConfig } from "@/components/DocSearch/docSearch";
-import HeaderLinks from "@/components/header/HeaderLinks";
 import { siteConfig } from "@/config/site";
 import { WeeklyPost } from "@/types/weekly";
 import Image from "next/image";
@@ -19,7 +18,7 @@ const Header = ({ posts }: { posts: WeeklyPost[] }) => {
               width={24}
               height={24}
             />
-            <span className="text-gray-100 hidden sm:block">开源周刊</span>
+            <span className="text-gray-100 hidden sm:block">小杰说</span>
           </Link>
           <div className="hidden md:flex md:gap-x-6"></div>
         </div>
@@ -28,7 +27,8 @@ const Header = ({ posts }: { posts: WeeklyPost[] }) => {
           {/* <SearchBar posts={posts} /> */}
           {docSearchConfig.docSearch.appId ? <DocSearch /> : <></>}
 
-          <HeaderLinks />
+          {/* 暂时隐藏社交链接 */}
+          {/* <HeaderLinks /> */}
           {/* <ThemedButton /> */}
         </div>
       </nav>
